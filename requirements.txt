@@ -1,0 +1,68 @@
+asttokens==3.0.1
+blinker @ file:///C:/miniconda3/conda-bld/blinker_1764332307774/work
+Bottleneck @ file:///C:/miniconda3/conda-bld/bottleneck_1761938212172/work
+brotlicffi @ file:///C:/miniconda3/conda-bld/brotlicffi_1764961392766/work
+certifi @ file:///C:/miniconda3/conda-bld/certifi_1763135348707/work/certifi
+cffi @ file:///C:/miniconda3/conda-bld/cffi_1761832793693/work
+charset-normalizer @ file:///C:/miniconda3/conda-bld/charset-normalizer_1761744988796/work
+click @ file:///C:/miniconda3/conda-bld/click_1764332357576/work
+colorama @ file:///C:/Users/dev-admin/buildout/croot/colorama_1759952627215/work
+comm==0.2.3
+contourpy==1.3.3
+cycler==0.12.1
+debugpy==1.8.19
+decorator==5.2.1
+executing==2.2.1
+Flask @ file:///C:/Users/dev-admin/buildout/croot/flask_1759970065939/work
+fonttools==4.61.1
+gunicorn==23.0.0
+idna @ file:///C:/Users/dev-admin/buildout/croot/idna_1762551230734/work
+ipykernel==7.1.0
+ipython==9.8.0
+ipython_pygments_lexers==1.1.1
+itsdangerous @ file:///C:/Users/dev-admin/buildout/croot/itsdangerous_1759965296215/work
+jedi==0.19.2
+Jinja2 @ file:///C:/Users/dev-admin/buildout/croot/jinja2_1761938590194/work
+joblib==1.5.3
+jupyter_client==8.7.0
+jupyter_core==5.9.1
+kiwisolver==1.4.9
+MarkupSafe @ file:///C:/Users/dev-admin/buildout/croot/markupsafe_1759955189290/work
+matplotlib==3.10.8
+matplotlib-inline==0.2.1
+mkl-service==2.5.2
+mkl_fft @ file:///C:/miniconda3/conda-bld/mkl_fft_1761592920453/work
+mkl_random @ file:///C:/miniconda3/conda-bld/mkl_random_1761593081220/work
+nest-asyncio==1.6.0
+numexpr @ file:///C:/miniconda3/conda-bld/numexpr_1762165726164/work
+numpy @ file:///C:/miniconda3/conda-bld/numpy_and_numpy_base_1763980696655/work/dist/numpy-2.3.5-cp314-cp314-win_amd64.whl#sha256=76af5c26e1b6f0492c90dbb17276bd664bbde95b360641a0da098aef53933ec8
+packaging==25.0
+pandas @ file:///C:/miniconda3/conda-bld/pandas_1762332435977/work/dist/pandas-2.3.3-cp314-cp314-win_amd64.whl#sha256=ac6b8c30836d425b7de9199ad67d79b5d4d36663122fd5a70d81bfc894c0da42
+parso==0.8.5
+pillow==12.0.0
+platformdirs==4.5.1
+prompt_toolkit==3.0.52
+psutil==7.2.1
+pure_eval==0.2.3
+pycparser @ file:///C:/Users/dev-admin/buildout/croot/pycparser_1759955361075/work
+Pygments==2.19.2
+pyparsing==3.3.1
+PySocks @ file:///C:/miniconda3/conda-bld/pysocks_1761753029698/work
+python-dateutil @ file:///C:/Users/dev-admin/buildout/croot/python-dateutil_1759954839763/work
+python-dotenv @ file:///C:/Users/dev-admin/buildout/croot/python-dotenv_1759962700480/work
+pytz @ file:///C:/Users/dev-admin/buildout/croot/pytz_1759958332927/work
+pyzmq==27.1.0
+requests @ file:///C:/miniconda3/conda-bld/requests_1762359708170/work
+scikit-learn==1.8.0
+scipy==1.16.3
+seaborn==0.13.2
+six @ file:///C:/Users/dev-admin/buildout/croot/six_1759954493303/work
+stack-data==0.6.3
+threadpoolctl==3.6.0
+tornado==6.5.4
+traitlets==5.14.3
+tzdata @ file:///croot/python-tzdata_1746123641790/work
+urllib3 @ file:///C:/miniconda3/conda-bld/urllib3_1765399261508/work
+wcwidth==0.2.14
+Werkzeug @ file:///C:/Users/dev-admin/buildout/croot/werkzeug_1759968538419/work
+win_inet_pton @ file:///C:/miniconda3/conda-bld/win_inet_pton_1761746275387/work

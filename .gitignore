@@ -1,3 +1,94 @@
-.env
 user_interactions_31tdtyi6spn7vymeho5dr7qjgx3m.csv
 user_tokens.csv
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# ==============================
+# Virtual Environments
+# ==============================
+env/
+venv/
+.venv/
+ENV/
+.conda/
+conda-env/
+anaconda3/
+
+# ==============================
+# Conda
+# ==============================
+*.conda
+*.yml
+*.yaml
+
+# ==============================
+# Flask
+# ==============================
+instance/
+.webassets-cache
+*.log
+
+# ==============================
+# Environment Variables
+# ==============================
+.env
+.env.*
+*.env
+
+# ==============================
+# ML / Data Science
+# ==============================
+data/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.json
+*.parquet
+
+# Models
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.pt
+*.pth
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ==============================
+# IDEs
+# ==============================
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Build / Cache
+# ==============================
+build/
+dist/
+*.egg-info/
+
+# ==============================
+# Railway
+# ==============================
+.railway/
