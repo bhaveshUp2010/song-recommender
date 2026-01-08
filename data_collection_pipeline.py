@@ -8,7 +8,7 @@ load_dotenv()
 
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-REDIRECT_URL = os.getenv("REDIRECT_URL")
+REDIRECT_URL = os.environ.get("SPOTIFY_REDIRECT_URI", "http://127.0.0.1:8000/callback")
 
 def get_auth_url():
     scope = "user-top-read user-library-read playlist-read-private user-read-recently-played"
