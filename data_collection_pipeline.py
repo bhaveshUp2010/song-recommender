@@ -9,7 +9,6 @@ load_dotenv()
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 REDIRECT_URL = os.getenv("REDIRECT_URL")
-PORT = os.getenv("PORT")
 
 def get_auth_url():
     scope = "user-top-read user-library-read playlist-read-private user-read-recently-played"
@@ -205,5 +204,5 @@ def callback():
     return "<h1>Data collected! Check your CSV files 🎧</h1> <a href='/'>home</a>"
 
 
-if __name__ == "__main__":  
-    app.run(host= "0.0.0.0",port=PORT)
+if __name__ == "__main__":
+    app.run(port=8000)
