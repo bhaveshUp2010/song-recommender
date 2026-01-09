@@ -4,6 +4,11 @@ from flask import Flask, request,session
 import os
 from dotenv import load_dotenv
 
+DATA_DIR = "/data" if os.getenv("RAILWAY_ENVIRONMENT") else "./data"
+os.makedirs(DATA_DIR, exist_ok=True)
+
+TOKENS_FILE = os.path.join(DATA_DIR,"user_tokens.csv")
+INTERACTION_FILE_TEMPLATE = os.path.join(DATA_DIR, "user_interactions_{user_id}.csv")
 load_dotenv()
 
 CLIENT_ID = os.getenv("CLIENT_ID")
@@ -186,10 +191,17 @@ def callback():
     # print("User:", user_id)
     # print("Refresh Token:", refresh_token)
 
-    with open("user_tokens.csv", "a") as f:
-        f.write(f"{user_id}, {refresh_token}\n")
-        f.close()
-    print("refresh token saved")
+    # with open("user_tokens.csv", "a") as f:
+    #     f.write(f"{user_id}, {refresh_token}\n")
+    #     f.close()
+    # print("refresh token saved")
+
+    if not os.path.exists(TOKENS_FILE):
+        with open(TOKENS_FILE, "w") as f:
+            f.write("user_id,refresh_token\n")
+    with open(TOKENS_FILE, "a") as f:
+        f.write(f"{user_id},{refresh_token}\n")
+    print("User's refresh token saved")
 
     interactions = []
     interactions += get_top_tracks(access_token, user_id)
@@ -198,8 +210,17 @@ def callback():
     interactions += get_playlist_tracks(access_token, user_id)
 
     df = pd.DataFrame(interactions).drop_duplicates(subset=["user_id", "song_id", "rating_source"])
-    df.to_csv(f"user_interactions_{user_id}.csv", index=False)
-    print("Saved user interaction data")
+    
+    # df.to_csv(f"user_interactions_{user_id}.csv", index=False)
+    # print("Saved user interaction data")
+
+    interactions_file = INTERACTION_FILE_TEMPLATE.format(user_id = user_id)
+
+    if os.path.exists(interactions_file):
+        df.to_csv(interactions_file, mode="a", index=False, header= False)
+    else:
+        df.to_csv(interactions_file, index= False, header= True)
+    print("Saved user interaction Data")
 
     return "<h1>Data collected! Check your CSV files 🎧</h1> <a href='/'>home</a>"
 
